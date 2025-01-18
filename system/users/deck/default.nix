@@ -21,10 +21,9 @@ let
   ];
 in
 {
-  users.users.icedborn.packages =
+  users.users.deck.packages =
     with pkgs;
     [
-      adwsteamgtk
       appimage-run
       blanket
       bottles
