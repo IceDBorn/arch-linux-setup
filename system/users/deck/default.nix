@@ -10,7 +10,7 @@ let
   inherit (lib) optional;
   cfg = config.icedos;
 
-  emulators = [
+  emulators = with pkgs; [
     # cemu
     # duckstation
     # heroic
@@ -21,11 +21,10 @@ let
   ];
 in
 {
-  users.users.icedborn.packages =
+  users.users.deck.packages =
     with pkgs;
     [
       appimage-run
-      blanket
       bottles
       fragments
       gimp
